@@ -10,6 +10,6 @@ plot(new_hpc$DateTime, new_hpc$Voltage,type="l", xlab= 'dateTime', ylab='Voltage
 plot(new_hpc$DateTime, new_hpc$Sub_metering_1, type="l", xlab= 'dateTime', ylab='Energy Sub Metering')
 lines(new_hpc$DateTime, new_hpc$Sub_metering_2, type="l", col='red')
 lines(new_hpc$DateTime, new_hpc$Sub_metering_3, type="l", col='blue')
-legend("topright", legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty= c(1,1,1), bty = "n", cex= 0.5, col= c("black", "red", "blue"))
+legend("topright", legend= c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty= c(1,1,1), bty = "n", cex= 0.5, inset= 0.1, col= c("black", "red", "blue"))
 
 plot(new_hpc$DateTime, new_hpc$Global_reactive_power,type="l", xlab= 'dateTime', ylab='Global_reactive_power')
